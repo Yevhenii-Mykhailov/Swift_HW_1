@@ -127,10 +127,10 @@ class ViewController: UIViewController {
         for (year, months) in calendarPro {
             if year == 2019 {
                 selectedYear = year
-                for month in months {
-                    if month.key == "September" {
-                        selectedMonth = month.key
-                        for day in month.value {
+                for (month, days) in months {
+                    if month == "September" {
+                        selectedMonth = month
+                        for day in days {
                             if day == 1 {
                                 selectedDay = day
                             }
